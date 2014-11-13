@@ -4,7 +4,11 @@ class BlogpostsController < ApplicationController
   # GET /blogposts
   # GET /blogposts.json
   def index
-    @blogposts = Blogpost.all
+    @blogposts = [].tap do |presentations|
+      Blogpost.all.each do |post|
+        presentations << PostPresenter.new(post)
+      end
+    end
   end
 
   # GET /blogposts/1
