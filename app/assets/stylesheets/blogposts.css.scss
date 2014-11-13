@@ -1,0 +1,47 @@
+#notice {
+  background: #6d1d1d;
+  color: #fff;
+}
+#site-title {
+  padding: .66em 1em .66em 0;
+  border-bottom: 1px solid #525252;
+  margin-bottom: .66em;
+  font-size: 3em;
+  font-family: 'Times New Roman';
+}
+
+body {
+  font: 16px/24px "Times New Roman";
+
+  a:hover {
+    background: none;
+    color: #3707ca;
+  }
+}
+
+#site-content {
+  padding: 0 .66em;
+  font-family: 'Times New Roman';
+}
+
+#blog-posts {
+  margin-bottom: 1.66em;
+  .post {
+    padding: 1em 0;
+    border-bottom: 1px solid #999999;
+  }
+}
+
+input[type=text], textarea {
+  width: 66%;
+  line-height: inherit;
+}
+
+input, textarea {
+  font-size: inherit;
+}
+
+#site {
+  width: 66%;
+  margin: 0 auto;
+}

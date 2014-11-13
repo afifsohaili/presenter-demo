@@ -8,7 +8,11 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="site">
+  <p id="notice"><%= notice %></p>
 
+  <h1 id="site-title">Presenter</h1>
+  <div id="site-content"><%= yield %></div>
+</div>
 </body>
 </html>
