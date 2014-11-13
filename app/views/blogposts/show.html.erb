@@ -1,0 +1,11 @@
+<h2><%= @blogpost.title %></h2>
+
+<div id="body">
+  <% if false#@blogpost.body.length > 120 %>
+    <%= truncate(@blogpost.body, length: 120) %>
+  <% else %>
+    <%= @blogpost.body %>
+  <% end %>
+</div>
+
+<%= link_to 'Back', blogposts_path %>
